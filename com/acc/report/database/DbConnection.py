@@ -1,12 +1,7 @@
 from logging import root
-from tkinter import *
-import tkinter as tk
-from tkinter import messagebox
 import mysql.connector 
-from tkinter import ttk
 
-
-class DbConnection(tk.Tk):
+class DbConnection:
 
     myDb = mysql.connector.connect(
 
@@ -33,6 +28,5 @@ class DbConnection(tk.Tk):
 
     print(myDb)
     # Database.py ends here
-
     # sqlCursor.close()
     # myDb.close()
